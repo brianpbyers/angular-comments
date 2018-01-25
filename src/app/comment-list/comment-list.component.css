@@ -1,0 +1,25 @@
+#deleteButton{
+	background-color: red;
+	color: white;
+	border-radius: 1rem;
+}
+
+#editButton{
+	background-color: lightblue;
+	border-radius: 1rem;
+}
+
+ul{
+	list-style:none;
+	background-color:grey;
+}
+
+li{
+	font-size: 1.1rem;
+	margin: .5rem 0;
+	background-color: lightgrey;
+}
+
+li i{
+	font-size: .75rem;
+}

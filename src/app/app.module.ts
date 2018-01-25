@@ -1,16 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 
+import { CommentService } from './comment/comment.service';
+import { CommentListComponent } from './comment-list/comment-list.component';
+import { NewCommentComponent } from './new-comment/new-comment.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CommentListComponent,
+    NewCommentComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, FormsModule
   ],
-  providers: [],
+  providers: [ CommentService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

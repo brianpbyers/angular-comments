@@ -1,0 +1,14 @@
+form{
+	text-align:center;
+	background-color:lightblue;
+}
+
+input{
+	border: .2rem solid black;
+	border-radius: .4rem;
+}
+
+button{
+	background-color: lightgreen;
+	border-radius: 1rem;
+}

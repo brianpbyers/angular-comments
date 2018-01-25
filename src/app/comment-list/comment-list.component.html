@@ -1,0 +1,16 @@
+<ul>
+    <li *ngFor="let comment of comments; let i = index">
+    	<div *ngIf="comment!=commentToEdit">
+    		{{comment.comment}} - <i>{{comment.author}}  </i>
+    		<button (click)="deleteComment(i)" id="deleteButton">  X  </button>
+    		<button (click)="toggleEdit(comment)" id="editButton">Edit</button>
+    	</div>
+		<div *ngIf="comment==commentToEdit">
+			<form (submit)="editComment(i)">
+				<input [(ngModel)]="comments[i].comment" type="text" name="Comment" placeholder="comment">
+				<input [(ngModel)]="comments[i].author" type="text" name="Author" placeholder="author">
+				<button type="submit">Add Comment</button>
+			</form>
+		</div>
+    </li>
+</ul>

@@ -1,0 +1,6 @@
+
+<form (submit)="addComment(newComment)">
+	<input [(ngModel)]="newComment.comment" type="text" name="Comment" placeholder="comment">
+	<input [(ngModel)]="newComment.author" type="text" name="Author" placeholder="author">
+	<button type="submit">Add Comment</button>
+</form>
